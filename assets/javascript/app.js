@@ -38,9 +38,11 @@ $(document).on("click", ".team-button", function(){
       var results = response.data;
 
       for (i = 0; i < results.length; i++){
-      var teamDiv = $("<div class='sports-item '>");
+      var teamDiv = $("<div class='sports-item'>");
 
       var rating = results[i].rating;
+
+      console.log(results);
 
       var p = $("<p>").text("Rating: " + rating);
 
@@ -87,7 +89,7 @@ $(document).on("click", ".team-button", function(){
   $("#addTeam").on("click", function(event){
    event.preventDefault();
 
-   var newTeam = $("input").eg(0).val();
+   var newTeam = $("input").val();
 
    if (newTeam.length > 2) {
 

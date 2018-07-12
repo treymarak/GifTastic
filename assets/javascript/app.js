@@ -38,26 +38,27 @@ $(document).on("click", ".team-button", function(){
       var results = response.data;
 
       for (i = 0; i < results.length; i++){
-      var teamDiv = $("<div class='sports-item'>");
+         var teamDiv = $("<div class='sports-item'>");
 
-      var rating = results[i].rating;
+         var rating = results[i].rating;
 
-      console.log(results);
+         console.log(results[i]);
 
-      var p = $("<p>").text("Rating: " + rating);
+         var p = $("<p>").text("Rating: " + rating);
+        
 
-      var animated = results[i].images.fixed_height.url;
-      var still = results[i].images.fixed_height_still.url;
+         var animated = results[i].images.fixed_height.url;
+         var still = results[i].images.fixed_height_still.url;
 
-      var teamImage = $("<img>");
-      teamImage.attr("src", still);
-      teamImage.attr("data-still", still);
-      teamImage.attr("data-animate", animated);
-      teamImage.attr("data-state", "still");
-      teamImage.addClass("team-image");
-      teamDiv.append(p);
-      teamDiv.append(teamImage);
-      $("#sportsTeams").append(teamDiv);
+         var teamImage = $("<img>");
+         teamImage.attr("src", still);
+         teamImage.attr("data-still", still);
+         teamImage.attr("data-animate", animated);
+         teamImage.attr("data-state", "still");
+         teamImage.addClass("team-image");
+         teamDiv.append(p);
+         teamDiv.append(teamImage);
+         $("#sportsTeams").append(teamDiv);
 
       }
       

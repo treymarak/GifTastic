@@ -1,3 +1,11 @@
+body {
+    font-family: 'Graduate', cursive;
+    font-size: 18px; 
+    
+  }
+  
+
+
 img {
 
 width: 100%;
@@ -12,7 +20,7 @@ h1{
     text-align: center;
     font-weight: bolder;
     font-size: 48px;
-    color: yellow;
+    color: #ffffff;
     position: absolute;
     top: 0;
     left: 450px;
@@ -22,11 +30,25 @@ form {
 
     font-family: 'Graduate', cursive;
     position: fixed;
-    color: yellow;
+    color: #ffffff;
     width: 30%;
     top: 300px;
     right: 20px;
 }
+  
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    font-family: 'Graduate', cursive;
+    font-size: 18px;
+  }
   
 #addTeam{
 
@@ -36,22 +58,51 @@ form {
 
 }
 
-label{
-
-position: fixed;
-top: 280px;
-right: 200px;
-
-
-}
 
 #teamButtons{
 
     border-style: solid;
     border-width: medium;
-    border-color: black;
-
+    border-color:#ffffff;
+    position: fixed;
+    width: 50%;
+    padding: 50px;
+    top: 100px;
+    left: 300px;
 
 
 
 }
+
+#sportsTeams {
+    width: 70%;
+  }
+  
+  .sports-team {
+    float: left;
+    padding: 10px;
+  }
+
+
+  button,
+input[type="submit"] {
+    
+  font-family: 'Graduate', cursive;  
+  padding: 5px 20px;
+  margin: 0 10px 10px 0;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  background: #500000;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #bbb;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: #555555;
+}
+
+
+  

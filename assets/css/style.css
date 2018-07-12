@@ -24,8 +24,34 @@ form {
     position: fixed;
     color: yellow;
     width: 30%;
-    padding: 20px;
     top: 300px;
-    right: 100px;
+    right: 20px;
 }
   
+#addTeam{
+
+    font-family: 'Graduate', cursive;
+    font-weight: bolder;
+
+
+}
+
+label{
+
+position: fixed;
+top: 280px;
+right: 200px;
+
+
+}
+
+#teamButtons{
+
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+
+
+
+
+}

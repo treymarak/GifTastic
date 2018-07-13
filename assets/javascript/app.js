@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-var sportsTeam = ["Texas A&M Aggies", "Dallas Cowboys", "Texas Rangers", "Dallas Stars", "Dallas Mavericks"]
+var sportsTeam = ["Texas Aggies Football", "Dallas Cowboys Football", "Texas Rangers", "Dallas Stars", "Dallas Mavericks"]
 
 
 function buttons(arrayToUse, classToAdd, addToArea) {
@@ -27,7 +27,7 @@ $(document).on("click", ".team-button", function(){
     $(this).addClass("active");
 
     var topic = $(this).attr("data-type");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=9Rav83Ou7Eo52HDdCX72BtXEtk9LhWDU&limit=10";
+    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=9Rav83Ou7Eo52HDdCX72BtXEtk9LhWDU&limit=10&offset=0&rating=G&lang=en";
 
     $.ajax({
         url: queryURL,
@@ -95,6 +95,7 @@ $(document).on("click", ".team-button", function(){
    if (newTeam.length > 2) {
 
     sportsTeam.push(newTeam);
+
 
    }
 

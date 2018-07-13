@@ -29,7 +29,7 @@ h1{
 form {
 
     font-family: 'Graduate', cursive;
-    position: fixed;
+    position: absolute;
     color: #ffffff;
     width: 30%;
     top: 300px;
@@ -67,7 +67,7 @@ label {
     position: relative;
     width: 50%;
     padding: 20px;
-    top: 100px;
+    top: 75px;
     left: 300px;
 
 
@@ -96,10 +96,20 @@ input[type="submit"]:hover {
 
 .team-image {
 
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 100px;
+  left: 200px;
 
- 
-  width: 100px;
-  height: 100px;
+}
+
+p{
+
+  color: #ffffff;
+  position: relative;
+  top: 100px;
+  left: 200px;
 }
 
 

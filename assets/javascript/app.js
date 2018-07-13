@@ -38,7 +38,7 @@ $(document).on("click", ".team-button", function(){
       var results = response.data;
 
       for (i = 0; i < results.length; i++){
-         var teamDiv = $("<div class='sports-item'>");
+         var teamDiv = $("<div>");
 
          var rating = results[i].rating;
 

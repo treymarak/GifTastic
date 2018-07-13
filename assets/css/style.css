@@ -6,7 +6,7 @@ body {
   
 
 
-img {
+#background {
 
 width: 100%;
 position: fixed;
@@ -64,7 +64,7 @@ label {
     border-style: solid;
     border-width: medium;
     border-color:#ffffff;
-    position: fixed;
+    position: relative;
     width: 50%;
     padding: 20px;
     top: 100px;
@@ -97,9 +97,9 @@ input[type="submit"]:hover {
 .team-image {
 
 
-  float: left;
-  width: 400px;
-  height: 400px;
+ 
+  width: 100px;
+  height: 100px;
 }
 
 
